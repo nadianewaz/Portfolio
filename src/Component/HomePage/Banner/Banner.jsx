@@ -20,7 +20,7 @@ const Banner = () => {
               <br /> developer</h2>
            </Typography>
            <Typography variant="subtitle1" sx={{fontSize: '18px', color:'#fff', px: 2}}>
-            I am a frontend web developer. I can develop a project with clean code and perfect design. I also love to work with React and dynamic applications!!
+           Hi THERE! I'M NADIA TAMANNA NITU, A Front-End Web Developer passionate about creating interactive applications with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest!
 
            </Typography>
             <Typography variant="subtitle1" sx={{color: '#fff', py: 2}}>
