@@ -1,6 +1,7 @@
 import React from 'react';
 import Navigation from '../../Multiple/Navbar/Navigation';
 import Banner from '../Banner/Banner';
+import About from '../About/About';
 
 
 const Home = () => {
@@ -8,6 +9,7 @@ const Home = () => {
         <>
             <Navigation></Navigation>
             <Banner></Banner>
+            <About></About>
             
         </>
     );

@@ -9,7 +9,7 @@ import { Link } from 'react-router-dom';
 const Navigation = () => {
     return (
         <>
-
+                                     
 
 <Box sx={{ flexGrow: 1 }}>
       <AppBar position="static" sx={{backgroundColor: '#615F8B'}}>
@@ -19,6 +19,9 @@ const Navigation = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left', fontSize: '28px' }}>
             Nadia Tamanna Nitu  
           </Typography>
+          <Link to="/">
+          <Button sx={{color: '#fff'}}>Home   </Button>
+          </Link>
           <Link to="/about">
           <Button sx={{color: '#fff'}}>About  </Button>
           </Link>
