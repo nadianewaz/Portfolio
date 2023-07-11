@@ -11,7 +11,7 @@ const About = () => {
         <Box> 
         <Typography sx={{textTransform: 'capitalize', color: '#615F8B', m: 4}}>
         <h2>about me
-            <FilterVintageIcon sx={{pl: 1, fontSize: 23}}></FilterVintageIcon> 
+            <FilterVintageIcon sx={{pl: 2, fontSize: 23}}></FilterVintageIcon> 
         </h2>
         </Typography>
        

@@ -25,6 +25,9 @@ const Navigation = () => {
           <Link to="/about">
           <Button sx={{color: '#fff'}}>About  </Button>
           </Link>
+          <Link to="/toolkit">
+          <Button sx={{color: '#fff'}}>Toolkit </Button>
+          </Link>
           <Link to="/project">
           <Button sx={{color: '#fff'}}>Project</Button>
           </Link>
