@@ -52,7 +52,7 @@ const Toolkit = () => {
           <img src={react} alt="" style={{
             width: 80,
             height: '80px',
-            marginLeft: '28px'
+            marginLeft: '30px'
           }}/>
         
           <img src={node} alt="" style={{
