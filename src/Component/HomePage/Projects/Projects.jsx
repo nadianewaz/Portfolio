@@ -24,7 +24,7 @@ const projects = [
     description: ' Built responsive and interactive web project. Used HTML5,
     CSS3, Bootstrap, JavaScript, jQuery.',
   
-  },
+  }
   
 ];
 

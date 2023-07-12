@@ -1,5 +1,5 @@
 import React from 'react';
-import { Box, Typography } from '@mui/material';
+import { Box, Grid, Typography } from '@mui/material';
 import Paper from '@mui/material/Paper';
 import LaptopIcon from '@mui/icons-material/Laptop';
 import html5 from '../../../images/html5.jpg';
@@ -17,7 +17,7 @@ const Toolkit = () => {
     return (
         <>
         <Paper elevation={3} sx={{ m: 15, p: 8, borderRadius: 5}}> 
-        <Box> 
+        <Box sx={{ flexGrow: 1 }}> 
         <Typography sx={{textTransform: 'capitalize', color: '#615F8B', m: 4}}>
         <h2>my toolkit 
             <LaptopIcon sx={{pl: 2, fontSize: 23}}></LaptopIcon> 
@@ -26,8 +26,12 @@ const Toolkit = () => {
         </Typography>
        
         <Typography variant="subtitle3" sx={{fontSize: '18px', color:'#615F8B', px: 2, }}>
-       
-          <img src={html5} alt="" style={{
+
+
+        <Grid container spacing={2}>
+        <Grid item xs={12} sm={12} md={12}>
+
+        <img src={html5} alt="" style={{
             width: 80,
             height: '80px'
           }}/>
@@ -47,9 +51,10 @@ const Toolkit = () => {
             width: 80,
             height: '80px'
           }}/>
-          <br />
-          
-          <img src={react} alt="" style={{
+         
+        </Grid>
+        <Grid item xs={12} sm={12} md={12}>
+        <img src={react} alt="" style={{
             width: 80,
             height: '80px',
             marginLeft: '30px'
@@ -71,6 +76,15 @@ const Toolkit = () => {
             width: 80,
             height: '80px'
           }}/>
+         
+        </Grid>
+       
+      </Grid>
+       
+         
+      
+          
+         
 
            </Typography>
         

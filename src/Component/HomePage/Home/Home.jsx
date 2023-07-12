@@ -3,8 +3,10 @@ import Navigation from '../../Multiple/Navbar/Navigation';
 import Banner from '../Banner/Banner';
 import About from '../About/About';
 import Toolkit from '../Toolkit/Toolkit';
+import Resume from '../Resume/Resume';
+import Footer from '../Footer/Footer';
 
-import Projects from '../Project/Projects';
+// import Projects from '../Project/Projects'; 
 
 
 const Home = () => {
@@ -14,7 +16,9 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <Toolkit></Toolkit>
-          <Projects></Projects>
+            {/* <Projects></Projects>  */}
+            <Resume></Resume>
+            <Footer></Footer>
             
         </>
     );
