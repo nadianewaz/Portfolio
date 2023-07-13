@@ -37,7 +37,7 @@ const Banner = () => {
             width: 300,
             height: '300px',
             borderRadius: '50%',
-            border: 1
+            border: "10px solid black"
           }}/>
             </Typography>
            
