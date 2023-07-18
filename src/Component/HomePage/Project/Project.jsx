@@ -5,8 +5,11 @@ import Typography from '@mui/material/Typography';
 
 
 
-const Project = () => {
+const Project = ({project}) => {
+    console.log(project);
     const { name, description } = project; 
+
+    console.log(name);
     return (
         <>
 
