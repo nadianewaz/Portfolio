@@ -6,7 +6,7 @@ import nitu from '../../../images/nitu.jpg';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
-
+import { Link } from 'react-router-dom';
 
 const Banner = () => {
     return (
@@ -25,7 +25,9 @@ const Banner = () => {
            </Typography>
             <Typography variant="subtitle1" sx={{color: '#fff', py: 2}}>
              <TwitterIcon></TwitterIcon>
-              <LinkedInIcon sx={{px: 2}}></LinkedInIcon>
+             <Link to="https://www.linkedin.com/in/nadianewaz/" target="_blank">
+                <LinkedInIcon sx={{px: 2}} htmlColor="white"></LinkedInIcon>
+              </Link>
               <GitHubIcon></GitHubIcon>
             </Typography>
            
