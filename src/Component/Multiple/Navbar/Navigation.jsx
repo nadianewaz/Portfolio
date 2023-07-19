@@ -28,8 +28,8 @@ const Navigation = () => {
           <Link to="/toolkit">
           <Button sx={{color: '#fff'}}>Toolkit </Button>
           </Link>
-          <Link to="/project">
-          <Button sx={{color: '#fff'}}>Project</Button>
+          <Link to="/projects">
+          <Button sx={{color: '#fff'}}>Projects</Button>
           </Link>
           <Link to="/resume">
           <Button sx={{color: '#fff'}}>Resume </Button>
