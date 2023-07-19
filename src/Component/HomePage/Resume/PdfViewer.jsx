@@ -13,7 +13,7 @@ const PdfViewer = () => {
 
   return (
     <div>
-      <Document file="Nazmus_Sakib_Resume.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={console.error}>
+      <Document file="Resume-of-Nadia-Tamanna-Nitu.pdf" onLoadSuccess={onDocumentLoadSuccess} onLoadError={console.error}>
         <Page pageNumber={pageNumber} />
       </Document>
       <p>
