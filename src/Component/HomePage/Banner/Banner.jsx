@@ -6,6 +6,7 @@ import nitu from '../../../images/nitu.jpg';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
+import Typewriter from "typewriter-effect";
 import { Link } from 'react-router-dom';
 
 const Banner = () => {
@@ -16,8 +17,22 @@ const Banner = () => {
       <Grid container spacing={2}>
         <Grid item xs={12} sm={12} md={7}>
             <Typography sx={{textTransform: 'uppercase', color: '#fff', fontSize: '32px'}}>
-            <h2>hi, i'm a front end 
-              <br /> developer</h2>
+              <h2>hi, i'm a
+                <Typewriter
+                  onInit={(typewriter) => {
+                      typewriter
+                          .typeString("developer")
+                          .pauseFor(1000)
+                          .deleteAll()
+                          .typeString("designer")
+                          .pauseFor(1000)
+                          .start();
+                  }}
+                  options={{
+                    loop: true,
+                  }}
+                  />
+              </h2>
            </Typography>
            <Typography variant="subtitle1" sx={{fontSize: '18px', color:'#fff', px: 2}}>
            Hi THERE! I'M NADIA TAMANNA NITU, A Front-End Web Developer passionate about creating interactive applications with a focus on the MERN stack, but still exploring other technologies and frameworks that catch my interest!
