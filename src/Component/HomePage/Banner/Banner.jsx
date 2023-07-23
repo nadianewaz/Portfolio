@@ -21,10 +21,10 @@ const Banner = () => {
                 <Typewriter
                   onInit={(typewriter) => {
                       typewriter
-                          .typeString("developer")
+                          .typeString("frontend")
                           .pauseFor(1000)
                           .deleteAll()
-                          .typeString("designer")
+                          .typeString("developer")
                           .pauseFor(1000)
                           .start();
                   }}

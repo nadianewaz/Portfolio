@@ -5,6 +5,8 @@ import About from '../About/About';
 import Toolkit from '../Toolkit/Toolkit';
 import Resume from '../Resume/Resume';
 import Footer from '../Footer/Footer';
+import Project from '../Project/Project';
+import Projects from '../Projects/Projects';
 
 // import Projects from '../Project/Projects'; 
 
@@ -16,7 +18,7 @@ const Home = () => {
             <Banner></Banner>
             <About></About>
             <Toolkit></Toolkit>
-            {/* <Projects></Projects>  */}
+            <Projects></Projects>
             <Resume></Resume>
             <Footer></Footer>
             
