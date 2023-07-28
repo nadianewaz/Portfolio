@@ -54,7 +54,8 @@ const Banner = () => {
             width: 300,
             height: '300px',
             borderRadius: '50%',
-            border: "10px solid black"
+            border: "10px solid #fff",
+            outline: 0,
           }}/>
             </Typography>
            
