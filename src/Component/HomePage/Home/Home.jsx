@@ -5,7 +5,6 @@ import About from '../About/About';
 import Toolkit from '../Toolkit/Toolkit';
 import Resume from '../Resume/Resume';
 import Footer from '../Footer/Footer';
-import Project from '../Project/Project';
 import Projects from '../Projects/Projects';
 
 // import Projects from '../Project/Projects'; 
@@ -14,12 +13,12 @@ import Projects from '../Projects/Projects';
 const Home = () => {
     return (
         <>
-            <Navigation></Navigation>
+            <div id="home"><Navigation></Navigation></div>
             <Banner></Banner>
-            <About></About>
-            <Toolkit></Toolkit>
-            <Projects></Projects>
-            <Resume></Resume>
+            <div id="about"><About></About></div>
+            <div id="toolkit"><Toolkit></Toolkit></div>
+            <div id="projects"><Projects></Projects></div>
+            <div id="resume"><Resume></Resume></div>
             <Footer></Footer>
             
         </>
