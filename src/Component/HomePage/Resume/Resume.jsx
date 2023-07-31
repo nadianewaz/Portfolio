@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Button, Typography } from '@mui/material';
-import Paper from '@mui/material/Paper';
+// import Paper from '@mui/material/Paper'; 
 import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import PdfViewer from './PdfViewer';
 
@@ -23,8 +23,8 @@ const Resume = () => {
     return (
         <>
        
-       <Paper elevation={3} sx={{ m: 15, p: 8, borderRadius: 5}}> 
-        <Box> 
+        {/* <Paper elevation={3} sx={{ m: 15, p: 8, borderRadius: 5}}>  */}
+        <Box sx={{my: 15}}> 
         <Typography sx={{textTransform: 'capitalize', color: '#615F8B', m: 4}}>
         <h2>my resume 
          
@@ -39,7 +39,7 @@ const Resume = () => {
         
         
            </Box>
-           </Paper>
+           {/* </Paper>  */}
             
         </>
     );

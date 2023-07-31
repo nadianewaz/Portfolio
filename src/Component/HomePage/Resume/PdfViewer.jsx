@@ -25,7 +25,7 @@ const PdfViewer = () => {
 	return (
 		<div>
 			<nav>
-				<Button variant='contained' sx={{ backgroundColor: '#615F8B', mr: 3, textTransform: 'uppercase', p: '10px 35px'}} onClick={goToPrevPage}>Prev</Button>
+				<Button variant='contained' sx={{ backgroundColor: '#615F8B', textTransform: 'uppercase', p: '10px 35px', mr: "8px"}} onClick={goToPrevPage}>Prev</Button>
 				<Button variant='contained' sx={{ backgroundColor: '#615F8B', textTransform: 'uppercase', p: '10px 35px'}} onClick={goToNextPage}>Next</Button>
         <p>
           <Typography variant="subtitle5" sx={{fontSize: '18px', color:'#615F8B' }}>
@@ -38,7 +38,7 @@ const PdfViewer = () => {
           file="Resume-of-Nadia-Tamanna-Nitu.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
-          <Page pageNumber={pageNumber} renderTextLayer={false} scale="2.0"/>
+          <Page pageNumber={pageNumber} renderTextLayer={false} />
         </Document>
       </center>
 		</div>
