@@ -5,6 +5,21 @@ import InsertDriveFileIcon from '@mui/icons-material/InsertDriveFile';
 import PdfViewer from './PdfViewer';
 
 const Resume = () => {
+    // Function will execute on click of button
+    const onButtonClick = () => {
+        // using Java Script method to get PDF file
+        fetch('Resume-of-Nadia-Tamanna-Nitu.pdf').then(response => {
+            response.blob().then(blob => {
+                // Creating new object of PDF file
+                const fileURL = window.URL.createObjectURL(blob);
+                // Setting various property values
+                let alink = document.createElement('a');
+                alink.href = fileURL;
+                alink.download = 'Resume-of-Nadia-Tamanna-Nitu.pdf';
+                alink.click();
+            })
+        })
+    }
     return (
         <>
        
@@ -16,15 +31,9 @@ const Resume = () => {
             <InsertDriveFileIcon sx={{pl: 2, fontSize: 23}}></InsertDriveFileIcon>
         </h2>
         </Typography>
-                                           
-        
-       
-        <Typography variant="subtitle5" sx={{fontSize: '18px', color:'#615F8B', px: 2, }}>
-            Tap to view my resume!
-        </Typography>
         <PdfViewer/ >
         <Typography>
-        <Button variant='contained' sx={{ backgroundColor: '#615F8B', mt: 3, textTransform: 'uppercase', p: '10px 35px'}} >view resume </Button>
+        <Button variant='contained' sx={{ backgroundColor: '#615F8B', mt: 3, textTransform: 'uppercase', p: '10px 35px'}} onClick={onButtonClick}>save resume </Button>
 
         </Typography>
         

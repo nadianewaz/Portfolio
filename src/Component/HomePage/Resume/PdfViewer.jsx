@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import { Document, Page, pdfjs  } from 'react-pdf';
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import { Typography } from '@mui/material';
+import { Button } from '@mui/material';
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//unpkg.com/pdfjs-dist@${pdfjs.version}/build/pdf.worker.min.js`;
 
@@ -22,19 +25,22 @@ const PdfViewer = () => {
 	return (
 		<div>
 			<nav>
-				<button onClick={goToPrevPage}>Prev</button>
-				<button onClick={goToNextPage}>Next</button>
-				<p>
-					Page {pageNumber} of {numPages}
-				</p>
+				<Button variant='contained' sx={{ backgroundColor: '#615F8B', mr: 3, textTransform: 'uppercase', p: '10px 35px'}} onClick={goToPrevPage}>Prev</Button>
+				<Button variant='contained' sx={{ backgroundColor: '#615F8B', textTransform: 'uppercase', p: '10px 35px'}} onClick={goToNextPage}>Next</Button>
+        <p>
+          <Typography variant="subtitle5" sx={{fontSize: '18px', color:'#615F8B' }}>
+            Page {pageNumber} of {numPages}
+          </Typography>
+        </p>
 			</nav>
-
-			<Document
-				file="Resume-of-Nadia-Tamanna-Nitu.pdf"
-				onLoadSuccess={onDocumentLoadSuccess}
-			>
-				<Page pageNumber={pageNumber} />
-			</Document>
+      <center>
+        <Document
+          file="Resume-of-Nadia-Tamanna-Nitu.pdf"
+          onLoadSuccess={onDocumentLoadSuccess}
+        >
+          <Page pageNumber={pageNumber} renderTextLayer={false} scale="2.0"/>
+        </Document>
+      </center>
 		</div>
 	);
 
