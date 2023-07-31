@@ -14,15 +14,15 @@ const projects = [
   {
     id: 2,
     name: 'Doctors Portal',
-    description: 'Develop a doctor and patient portal with Register and Login capabilities. Patients will be able to schedule appointments from the portal. This project is powered by React and Firebase.',
-    "Github": "https://github.com/nadianewaz/jewelry-management-system.git",
+    description: 'Develop a doctor and patient portal with Register and Login capabilities. Patients will be able to schedule appointments from the portal. This project is developed using React and Firebase.',
+    "Github": "https://github.com/nadianewaz/Doctor-s-Portal",
   
   },
   {
     id: 3,
     name: ' PSD to HTML conversion',
     description: ' Built responsive and interactive web project. Used HTML5, CSS3, Bootstrap, JavaScript, jQuery.',
-    "Github": "https://github.com/nadianewaz/jewelry-management-system.git",
+    "Github": "https://github.com/nadianewaz/Creative-Project",
   
   }
   
