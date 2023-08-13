@@ -1,6 +1,6 @@
 import React from 'react';
 import { Box, Grid, Typography } from '@mui/material';
-import Paper from '@mui/material/Paper';
+// import Paper from '@mui/material/Paper'; 
 import LaptopIcon from '@mui/icons-material/Laptop';
 import html5 from '../../../images/html5.jpg';
 import css3 from '../../../images/css3.jpg';
@@ -16,8 +16,8 @@ import git from '../../../images/github.jpg'
 const Toolkit = () => {
     return (
         <>
-        <Paper elevation={3} sx={{ m: 15, p: 8, borderRadius: 5}}> 
-        <Box sx={{ flexGrow: 1 }}> 
+        {/* <Paper elevation={3} sx={{ m: 15, p: 8, borderRadius: 5}}>  */}
+        <Box sx={{ flexGrow: 1, mb: 15 }}> 
         <Typography sx={{textTransform: 'capitalize', color: '#615F8B', m: 4}}>
         <h2>my toolkit 
             <LaptopIcon sx={{pl: 2, fontSize: 23}}></LaptopIcon> 
@@ -89,7 +89,7 @@ const Toolkit = () => {
            </Typography>
         
            </Box>
-           </Paper>
+           {/* </Paper>  */}
         </>
     );
 };

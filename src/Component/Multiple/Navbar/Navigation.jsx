@@ -14,8 +14,6 @@ const Navigation = () => {
 <Box sx={{ flexGrow: 1 }}>
       <AppBar position="fixed" sx={{backgroundColor: '#615F8B'}}>
       <Toolbar>
-          
-
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left', fontSize: '28px' }}>
             Nadia Tamanna Nitu  
           </Typography>
