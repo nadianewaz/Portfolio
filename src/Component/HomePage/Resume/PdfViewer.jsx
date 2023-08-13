@@ -35,7 +35,7 @@ const PdfViewer = () => {
 			</nav>
       <center>
         <Document
-          file="Resume-of-Nadia-Tamanna-Nitu.pdf"
+          file="Nadia_Tamanna_Nitu_Resume.pdf"
           onLoadSuccess={onDocumentLoadSuccess}
         >
           <Page pageNumber={pageNumber} renderTextLayer={false} />
