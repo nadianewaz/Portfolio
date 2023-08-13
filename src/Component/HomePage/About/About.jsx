@@ -8,7 +8,7 @@ const About = () => {
     return (
         <>
         {/* <Paper elevation={3} sx={{ m: 15, p: 8, borderRadius: 5}}>  */}
-        <Box sx={{m: 15}}> 
+        <Box sx={{flexGrow: 1,mb: 15}}> 
 
         <Grid container spacing={2} className='style'>
         <Grid item xs={12} sm={12} md={12}>
