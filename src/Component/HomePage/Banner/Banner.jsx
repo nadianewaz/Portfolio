@@ -50,13 +50,13 @@ const Banner = () => {
         </Grid>
         <Grid item xs={12} sm={12} md={5}>
             <Typography sx={{}}>
-            <img src={nitu} alt="" style={{
+            {/* <img src={nitu} alt="" style={{
             width: 300,
             height: '300px',
             borderRadius: '50%',
             border: "10px solid #fff",
             outline: 0,
-          }}/>
+          }}/> */}
             </Typography>
            
          

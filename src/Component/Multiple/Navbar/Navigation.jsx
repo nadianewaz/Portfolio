@@ -5,6 +5,7 @@ import Toolbar from '@mui/material/Toolbar';
 import Typography from '@mui/material/Typography';
 import Button from '@mui/material/Button';
 import { Link } from 'react-scroll';
+import DrawerComponent from './DrawerComponent';
 
 const Navigation = () => {
     return (
@@ -17,7 +18,8 @@ const Navigation = () => {
           <Typography variant="h6" component="div" sx={{ flexGrow: 1, textAlign: 'left', fontSize: '28px' }}>
             Nadia Tamanna Nitu  
           </Typography>
-          <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
+          <DrawerComponent/>
+          {/* <Link to="home" spy={true} smooth={true} offset={-70} duration={500}>
           <Button sx={{color: '#fff'}}>Home   </Button>
           </Link>
           <Link to="about" spy={true} smooth={true} offset={-70} duration={500}>
@@ -31,7 +33,7 @@ const Navigation = () => {
           </Link>
           <Link to="resume" spy={true} smooth={true} offset={-70} duration={500}>
           <Button sx={{color: '#fff'}}>Resume </Button>
-          </Link>
+          </Link> */}
          
           
         </Toolbar>
