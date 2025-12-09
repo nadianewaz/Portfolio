@@ -2,7 +2,6 @@ import React from 'react';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Typography } from '@mui/material';
-import nitu from '../../../images/nitu.jpg';
 import TwitterIcon from '@mui/icons-material/Twitter';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import GitHubIcon from '@mui/icons-material/GitHub';
@@ -15,7 +14,7 @@ const Banner = () => {
 
     <Box sx={{ flexGrow: 1, backgroundColor: '#615F8B' , py: 10}}>
       <Grid container spacing={2}>
-        <Grid item xs={12} sm={12} md={7}>
+        <Grid item xs={12} sm={12} md={12}>
             <Typography sx={{textTransform: 'uppercase', color: '#fff', fontSize: '32px'}}>
               <h2>hi, i'm a
                 <Typewriter
@@ -45,21 +44,6 @@ const Banner = () => {
               </Link>
               <GitHubIcon></GitHubIcon>
             </Typography>
-           
-            
-        </Grid>
-        <Grid item xs={12} sm={12} md={5}>
-            <Typography sx={{}}>
-            <img src={nitu} alt="" style={{
-            width: 300,
-            height: '300px',
-            borderRadius: '50%',
-            border: "10px solid #fff",
-            outline: 0,
-          }}/>
-            </Typography>
-           
-         
         </Grid>
        
       </Grid>
