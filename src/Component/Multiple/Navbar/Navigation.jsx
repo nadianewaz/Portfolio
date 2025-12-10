@@ -29,9 +29,9 @@ const Navigation = () => {
           <Link to="projects" spy={true} smooth={true} offset={-70} duration={500}>
           <Button sx={{color: '#fff'}}>Projects</Button>
           </Link>
-          <Link to="resume" spy={true} smooth={true} offset={-70} duration={500}>
+          {/* <Link to="resume" spy={true} smooth={true} offset={-70} duration={500}>
           <Button sx={{color: '#fff'}}>Resume </Button>
-          </Link>
+          </Link> */}
          
           
         </Toolbar>

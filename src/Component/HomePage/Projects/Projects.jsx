@@ -1,4 +1,4 @@
-import { Container, Grid, Typography } from '@mui/material';
+import { Container, Grid, Typography, Box } from '@mui/material';
 import React from 'react';
 import AccountCircleIcon from '@mui/icons-material/AccountCircle';
 import Project from '../Project/Project';
@@ -39,7 +39,7 @@ const Projects = () => {
         </Typography>
 
     
-                                   
+          <Box sx={{my: 15}}>                          
       <Container> 
       <Grid container spacing={2}>
         {
@@ -54,6 +54,7 @@ const Projects = () => {
         
       </Grid>
       </Container>
+      </Box>
       </>
     );
 };
